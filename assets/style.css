@@ -1,0 +1,64 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+header {
+    padding: 20px 35px;
+    background-color: rgb(224, 199, 56, 0.5);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;/*vw stands for veiwport width*/
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+
+#bio-image {
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+    display: flex;
+}
+#bio-image:hover {
+  box-shadow: 2px 2px 2px 1px rgba(24, 133, 5, 0.5)
+}
+
+#About-Me {
+    margin: 20px;
+}
+
+#Projects {
+    margin: 20px;
+}
+
+#Contact-me {
+    margin: 20px;
+}
+
+#Resume {
+    margin: 20px;
+}
+footer h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: right;
+}
