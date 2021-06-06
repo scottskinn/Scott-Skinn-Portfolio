@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-image: url("./images/nature-canada.jpeg");   
-}
 /*header styles*/
 header {
     padding: 20px 35px;
@@ -29,7 +24,7 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;/*vw stands for veiwport width*/
+    font-size: 20px;
     color: whitesmoke;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
@@ -37,7 +32,13 @@ header nav ul li a:hover {
     background-color: green;
     color: yellow;
     border-radius: 10px;
+}
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-image: url("./images/nature-canada.jpeg");
+    background-size: cover;
 }
 /*image styles*/
 #bio-image {
@@ -50,7 +51,7 @@ header nav ul li a:hover {
   box-shadow: 2px 2px 2px 1px rgba(24, 133, 5, 0.5)
 }
 
-/*left side styles*/
+/*main body styles*/
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -102,8 +103,8 @@ header nav ul li a:hover {
 #Resume p {
     padding-left: 20px;
 }
-/*right side styles*/
-.right {
+/*main side styles*/
+.main {
     width: 100%;
     padding: 25px;
     flex-direction: row;
@@ -119,7 +120,7 @@ header nav ul li a:hover {
 
 .flex-item {
     width: 45%;
-    border: 3px solid red;
+    border: 3px solid rgba(14, 123, 212, 0.5);
     height: 100%; 
     display: flex;
     flex-direction: column;
@@ -154,6 +155,7 @@ footer h2 {
     width: 100%;
     bottom: 10px;
     border: 3px solid rgba(14, 123, 212, 0.5);
+    color: whitesmoke;
 
 }
 
@@ -176,11 +178,7 @@ footer h2 {
         width: 100%;
         height: 50%;
     }
-    
-  
-    .right {
-      width: flex 2;
-    }
+
   }
   
   /* Width at 768px and below */
@@ -188,7 +186,10 @@ footer h2 {
 
   
     header {
-        flex-direction: column;
+        flex-direction: column;        
+    }
+    header nav ul {
+        justify-content: flex-start
     }
     
     .flex-container {
@@ -201,11 +202,6 @@ footer h2 {
   
       .flex-item {
           width: 100%;
-      }
-       
-    
-      .right {
-        width: flex 2;
       }
     }
   
@@ -223,11 +219,6 @@ footer h2 {
   
       .flex-item {
           width: 100%;
-      }
-       
-    
-      .right {
-        width: flex 2;
       }
     }
   
@@ -250,11 +241,6 @@ footer h2 {
       .flex-item {
           width: 100%;
       }
-       
-    
-      .right {
-        width: flex 2;
-      }
     }
   
   /* Width at 300px and below */
@@ -270,11 +256,6 @@ footer h2 {
   
       .flex-item {
           width: 100%;
-      }
-       
-    
-      .right {
-        width: flex 2;
       }
     } 
 
