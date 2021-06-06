@@ -6,14 +6,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-image: url("./images/nature-canada.jpeg");   
 }
 /*header styles*/
 header {
     padding: 20px 35px;
-    background-color: rgba(14, 123, 212, 0.5);
+    background-image: url("./images/night-sky.jpeg");    
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
+    color: whitesmoke;
 }
 header nav {
     margin: 7px 0;
@@ -28,7 +30,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;/*vw stands for veiwport width*/
-    color: black;
+    color: whitesmoke;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 header nav ul li a:hover {
@@ -118,7 +120,7 @@ header nav ul li a:hover {
 .flex-item {
     width: 45%;
     border: 3px solid red;
-    height: 250px; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
