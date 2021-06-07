@@ -8,4 +8,8 @@ For you to see the work i have done and working on.
 * HTML
 * CSS
 
+## Wedsite
+https://scottskinn.github.io/Scott-Skinn-Portfolio/
 
+## Contribution
+Maybe by Scott Skinn
