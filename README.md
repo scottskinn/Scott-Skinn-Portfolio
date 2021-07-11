@@ -8,7 +8,7 @@ For you to see the work I have done and currently working on.
 * HTML
 * CSS
 
-## Wedsite
+## Website
 https://scottskinn.github.io/Scott-Skinn-Portfolio/
 
 ## Contribution
