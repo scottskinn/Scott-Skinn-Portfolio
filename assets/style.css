@@ -6,11 +6,11 @@
 /*header styles*/
 header {
     padding: 20px 35px;
-    background-image: url("./images/night-sky.jpeg");    
+    /* background-image: url("./images/night-sky.jpeg");     */
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
-    color: whitesmoke;
+    color: black;
 }
 header nav {
     margin: 7px 0;
@@ -25,7 +25,7 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 20px;
-    color: whitesmoke;
+    color: black;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 header nav ul li a:hover {
@@ -37,13 +37,16 @@ header nav ul li a:hover {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    background-image: url("./images/nature-1622996341653-2801.jpg");
+    background-image: url("./images/black-and-white-montians.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 /*image styles*/
 #bio-image {
     width: 200px;
-    height: 200px;
+    height: 250px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -232,6 +235,21 @@ footer h2 {
 
     header {
         flex-direction: column;
+        display: column;
+        
+    }
+
+    header nav ul {
+        display: ;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 15px;
     }
     
     .flex-container {
