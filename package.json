@@ -1,0 +1,20 @@
+{
+  "name": "scott-skinn-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio of my Work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottskinn/Scott-Skinn-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottskinn/Scott-Skinn-Portfolio/issues"
+  },
+  "homepage": "https://github.com/scottskinn/Scott-Skinn-Portfolio#readme"
+}
