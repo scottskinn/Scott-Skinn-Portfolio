@@ -13,9 +13,16 @@ function App() {
   return (
     <>
       <Header />
-      <About />
-      <Portfolio />
-      <ContactForm />
+
+      {!contactSelected ? (
+        <>
+          <About></About>
+          <Portfolio></Portfolio>
+        </>
+        ) : (
+            <ContactForm></ContactForm>
+      )}
+
       <Footer />
     </>
   )
