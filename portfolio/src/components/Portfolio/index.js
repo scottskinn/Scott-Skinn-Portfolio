@@ -1,5 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import imgPixaradar from '../../assets/images/pixaradar.jpg';
+import imgRunBuddy from '../../assets/images/Run-buddy.jpg';
+import imgnAbl from '../../assets/images/n-Abl project.jpg';
+import imgPWG from '../../assets/images/Passwrod-generator.jpg';
+import imgTaskPro from '../../assets/images/Taskmaster.png';
+import imgWorkDay from '../../assets/images/Work schedular.png';
+import imgGitHub from '../../assets/images/Github-Screenshot.jpg';
+
+
 
 function Portfolio() {
   return (
@@ -11,7 +20,7 @@ function Portfolio() {
             <Link
               to={{ pathname:"https://askarrizvi.github.io/project1/"}} target="_blank">
               <img
-                src={require(`../../assets/images/pixaradar.jpg`)}
+                src={imgPixaradar}
                 className="imgclass"
                 alt="PixaRadar"
               />
@@ -25,7 +34,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/n-Abl project.jpg"
+                src={imgnAbl}
                 className="imgclass"
                 alt="n - Abl"
               />
@@ -44,7 +53,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/Run-buddy.jpg"
+                src={imgRunBuddy}
                 className="imgclass"
                 alt="RUN BUDDY"
               />
@@ -58,7 +67,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/Passwrod-generator.jpg"
+                src={imgPWG}
                 className="imgclass"
                 alt="Password Generator"
               />
@@ -72,7 +81,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/Taskmaster.png"
+                src={imgTaskPro}
                 className="imgclass"
                 alt="Taskmaster Pro"
               />
@@ -86,7 +95,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/Work schedular.png"
+                src={imgWorkDay}
                 className="imgclass work-img"
                 alt=" Work Day Scheduler"
               />
@@ -105,7 +114,7 @@ function Portfolio() {
               rel="noreferrer"
             >
               <img
-                src="./assets/images/Github-Screenshot.jpg"
+                src={imgGitHub}
                 className="imgclass"
                 alt="GitHub Profile "
               />

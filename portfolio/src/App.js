@@ -10,6 +10,7 @@ import Resume from './components/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function App() {
   const [categories] = useState([
     {
