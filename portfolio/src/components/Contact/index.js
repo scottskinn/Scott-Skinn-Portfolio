@@ -9,34 +9,28 @@ function ContactForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState);
-    };
-
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-                const isValid = validateEmail(e.target.value);
-                console.log(isValid);
-            
-            if (!isValid) {
-                setErrorMessage('Your email is invalid');
-            } else {
-                if (!e.target.value.length) {
-                    setErrorMessage(`${e.target.name} is required`);
-                } else {
-                setErrorMessage('');
-                }
-            }
-
-            setFormState({...formState, name: e.target.value})
-        
-            setFormState({...formState, [e.target.name]: e.target.value })
-
-            console.log('errorMessage', errorMessage);
-        }
         if (!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value });
-        }
+            setFormState({ [e.target.name]: e.target.value });
+            console.log('Form', formState);
+        };
     };
+
+    const handleChange = (e) => {
+        if (e.target.name === 'email') {
+          const isValid = validateEmail(e.target.value);
+          if (!isValid) {
+            setErrorMessage('Your email is invalid.');
+          } else {
+            setErrorMessage('');
+          }
+        } else {
+          if (!e.target.value.length) {
+            setErrorMessage(`${e.target.name} is required.`);
+          } else {
+            setErrorMessage('');
+          }
+        }
+      };
     // console.log(formState)
 
     return (
@@ -45,17 +39,21 @@ function ContactForm() {
             <form id='contact-form' onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor='name'>Name:</label>
-                    <input type='text' defaultValue={formState.name} onBlur={handleChange} name='name' />
+                    <input type='text' defaultValue={name} onBlur={handleChange} name='name' />
                 </div>
                 <div>
                     <label htmlFor='email' name='email'>Email address:</label>
-                    <input type='email' defaultValue={formState.email} onBlur={handleChange} name='email' />
+                    <input type='email' defaultValue={email} onBlur={handleChange} name='email' />
                 </div>
                 <div>
                     <label htmlFor='message'>Message:</label>
-                    <textarea name='message' defaultValue={formState.message} onBlur={handleChange} rows='5' />
+                    <textarea name='message' defaultValue={message} onBlur={handleChange} rows='5' />
                 </div>
-
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
                 <button type='submit'>Submit:</button>
                 {/* console.log(formState)  */}
                 {/* this console.log will show every key stroke, only in name */}

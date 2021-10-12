@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/scottskinn/Scott-Skinn-Portfolio/issues"
   },
-  "homepage": "https://github.com/scottskinn/Scott-Skinn-Portfolio#readme"
+  "homepage": "https://github.com/scottskinn/Scott-Skinn-Portfolio#readme",
+  "dependencies": {
+    "react-router-dom": "^5.3.0"
+  }
 }

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/*header styles*/
+header {
+  padding: 20px 35px;
+  /* background-image: url("./images/night-sky.jpeg");     */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: center;
+  color: black;
+}
