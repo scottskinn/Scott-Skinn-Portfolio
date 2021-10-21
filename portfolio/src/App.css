@@ -28,13 +28,20 @@
   color: #61dafb;
 }
 
-header {
+.header {
   padding: 20px 35px;
   /* background-image: url("./images/night-sky.jpeg");     */
   justify-content: space-between;
   flex-wrap: wrap;
-
+  z-index: 1070;
   color: black;
+}
+
+.Nav {
+  fixed: top;
+  position: sticky;
+  background-color: rgba(39, 172, 245, 1);
+  align: text-bottom;
 }
 
 /* .imgclass {
