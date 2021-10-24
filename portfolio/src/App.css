@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+body {
+  margin: 0;
+  padding: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  background-image: url("./assets/cover/black-and-white-montians.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--light);
+  font-family: 'Poiret One', cursive;
+
+}
+
 .header {
   padding: 20px 35px;
   /* background-image: url("./images/night-sky.jpeg");     */
@@ -44,10 +59,6 @@
   align: text-bottom;
 }
 
-/* .imgclass {
-  width: 35%;
-  height: 100%;
-} */
 
 .grid {
   min-height: 100%;
@@ -68,12 +79,65 @@
   margin: 20px;
 }
 
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+li {
+  list-style: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*footer syles*/
+footer {
+  position: fixed;
+  sticky: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #;
+  color: #61dafb;
+  text-align: center;
+}
+
 footer h2 {
   font-size: 30px;
   text-align: center;
-  position: bottom;
   width: 100%;
   bottom: 10px;
   border: 3px solid rgba(14, 123, 212, 0.5);
