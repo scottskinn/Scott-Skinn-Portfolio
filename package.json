@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd portfolio && npm run build",
     "heroku-postbuild": "npm run build",
-    "start": "cd portfolio && npm run start",
-    "install": "npm i && cd portfolio && npm i"
+    "start": "node app"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/scottskinn/Scott-Skinn-Portfolio#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "react-router-dom": "^5.3.0"
   }
 }
