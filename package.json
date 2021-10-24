@@ -4,7 +4,10 @@
   "description": "Portfolio of my Work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "npm run build",
+    "start": "cd portfolio && npm run start",
+    "install": "npm i && cd portfolio && npm i"
   },
   "repository": {
     "type": "git",
