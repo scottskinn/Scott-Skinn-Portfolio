@@ -1,4 +1,4 @@
-import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import '../../App.css'
 import Nav from "react-bootstrap/Nav";
 import About from '../About';
@@ -14,14 +14,14 @@ function MyNav() {
     
       <Nav className="justify-content-end" bg="dark" variant="dark" expand="lg" sticky="top">
         <Nav.Item>
-          <Nav.Link href="/about">About</Nav.Link>
+          <Link to="/about">About</Link>
         </Nav.Item>
-          <Nav.Link href="/contactForm">Contact</Nav.Link>
+          <Link to="/contactForm">Contact</Link>
         <Nav.Item>
-          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          <Link to="/portfolio">Portfolio</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/resume">Resume</Nav.Link>
+          <Link to="/resume">Resume</Link>
         </Nav.Item>
       </Nav>
 
