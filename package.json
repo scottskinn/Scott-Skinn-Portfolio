@@ -8,6 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build, -b master",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build",
     "heroku-postbuild": "npm run build",
     "start": "cd portfolio && npm run start"
   },
