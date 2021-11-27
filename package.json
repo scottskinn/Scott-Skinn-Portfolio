@@ -1,9 +1,12 @@
 {
+  "homepage": "https://scottskinn.github.io/Scott-Skinn-Portfolio/",
   "name": "scott-skinn-portfolio",
   "version": "1.0.0",
   "description": "Portfolio of my Work",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build, -b master",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run build",
     "start": "cd portfolio && npm run start"
@@ -18,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/scottskinn/Scott-Skinn-Portfolio/issues"
   },
-  "homepage": "https://github.com/scottskinn/Scott-Skinn-Portfolio#readme",
+  
   "dependencies": {
     "express": "^4.17.1",
     "react-router-dom": "^5.3.0"

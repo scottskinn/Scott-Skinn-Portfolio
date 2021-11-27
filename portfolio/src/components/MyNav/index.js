@@ -13,16 +13,16 @@ function MyNav() {
 
     
       <Nav className="justify-content-end" bg="dark" variant="dark" expand="lg" sticky="top">
-        <Nav.Item>
+        <li>
           <Link to="/about">About</Link>
-        </Nav.Item>
+        </li>
           <Link to="/contactForm">Contact</Link>
-        <Nav.Item>
+        <li>
           <Link to="/portfolio">Portfolio</Link>
-        </Nav.Item>
-        <Nav.Item>
+        </li>
+        <li>
           <Link to="/resume">Resume</Link>
-        </Nav.Item>
+        </li>
       </Nav>
 
 
