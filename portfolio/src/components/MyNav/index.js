@@ -14,20 +14,20 @@ function MyNav() {
     
       <Nav className="justify-content-end" bg="dark" variant="dark" expand="lg" sticky="top">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/About">About</Link>
         </li>
-          <Link to="/contactForm">Contact</Link>
+          <Link to="/ContactForm">Contact</Link>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/Portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <Link to="/Resume">Resume</Link>
         </li>
       </Nav>
 
 
       <Switch>
-        <Route path="/about">
+        <Route path="/About">
           <About />
         </Route>
         <Route path="/ContactForm">
