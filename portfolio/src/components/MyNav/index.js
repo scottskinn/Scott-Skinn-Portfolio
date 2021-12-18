@@ -1,4 +1,5 @@
 import { Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import '../../App.css'
 import Nav from "react-bootstrap/Nav";
 import About from '../About';
@@ -25,21 +26,22 @@ function MyNav() {
         </li>
       </Nav>
 
-
-      <Switch>
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route path="/ContactForm">
-          <ContactForm />
-        </Route>
-        <Route path="/Portfolio">
-          <Portfolio />
-        </Route>
-        <Route path="/Resume">
-          <Resume />
-        </Route>
-      </Switch>
+      <Router>
+        <Switch>
+          <Route path="/About">
+            <About />
+          </Route>
+          <Route path="/ContactForm">
+            <ContactForm />
+          </Route>
+          <Route path="/Portfolio">
+            <Portfolio />
+          </Route>
+          <Route path="/Resume">
+            <Resume />
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
