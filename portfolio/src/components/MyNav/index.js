@@ -1,43 +1,37 @@
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import '../../App.css'
+import "../../App.css";
+import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import About from '../About';
-import Portfolio from '../Portfolio';
-import ContactForm from '../Contact';
-import Resume from '../Resume';
+import About from "../About";
+import Portfolio from "../Portfolio";
+import ContactForm from "../Contact";
+import Resume from "../Resume";
 
 function MyNav() {
   return (
     <>
-      <h1>Scott Skinn</h1>
-
-    
-      <Nav className="justify-content-end" bg="dark" variant="dark" expand="lg" sticky="top">
-        <li>
-          <Link to="/About">About</Link>
-        </li>
-          <Link to="/ContactForm">Contact</Link>
-        <li>
-          <Link to="/Portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link to="/Resume">Resume</Link>
-        </li>
-      </Nav>
-
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#about">Scott Skinn</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link href="portfolio">Portfolio</Nav.Link>
+          <Nav.Link href="contactForm">Contact</Nav.Link>
+          <Nav.Link href="resume">Resume</Nav.Link>
+        </Nav>
+      </Navbar>
       <Router>
         <Switch>
-          <Route path="/About">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/ContactForm">
+          <Route path="/contactForm">
             <ContactForm />
           </Route>
-          <Route path="/Portfolio">
+          <Route path="/portfolio">
             <Portfolio />
           </Route>
-          <Route path="/Resume">
+          <Route path="/resume">
             <Resume />
           </Route>
         </Switch>
